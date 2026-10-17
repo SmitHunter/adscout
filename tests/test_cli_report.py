@@ -57,7 +57,7 @@ def _seed(engine: Engine, ads: list[Ad] = ADS, status: str = "ok") -> int:
         return snap.id
 
 
-_ANSI = re.compile(r"\[[0-9;]*m")
+_ANSI = re.compile(r"\x1b\[[0-9;]*m")
 
 
 def _invoke(*args: str) -> tuple[int, str]:
