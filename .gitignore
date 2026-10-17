@@ -1,0 +1,17 @@
+.env
+data/
+data-demo/
+__pycache__/
+.venv/
+node_modules/
+web/dist/
+src/adscout/static/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.pyc
+.superpowers/
+web/node_modules/
+
+# Screenshots of real data stay local; README media live in docs/media/ (demo data only).
+docs/screenshots/

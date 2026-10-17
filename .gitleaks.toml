@@ -1,0 +1,16 @@
+# Extend the default gitleaks ruleset; only allow the recorded Meta page fixtures.
+title = "adscout gitleaks config"
+
+[extend]
+useDefault = true
+
+# The recorded Meta Ad Library pages under tests/fixtures/meta_web contain CDN asset
+# hashes and page-config blobs that the generic-api-key entropy rule flags. They are
+# public page content, not credentials.
+[[allowlists]]
+description = "Recorded public Meta Ad Library fixtures (CDN hashes, not secrets)"
+targetRules = ["generic-api-key"]
+paths = ['''^tests/fixtures/meta_web/.*\.(json|html)$''']
+
+# docs/media/ (README screenshots and the demo GIF, made from `adscout demo` data only) is
+# scanned like everything else: it is deliberately not allowlisted.

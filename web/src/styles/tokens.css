@@ -1,0 +1,69 @@
+/*
+ * AdScout design tokens. These are the only colours and fonts the UI uses.
+ * Dark is the default; light applies when <html data-theme="light">.
+ */
+:root,
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0e1418;
+  --panel: #141c21;
+  --rule: #24323b;
+  --text: #dce5ea;
+  --muted: #7d909b;
+  --signal: #55c7be;
+  --pass: #3dba7e;
+  --warn: #e3a23b;
+  --fail: #e05d62;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #eef2f4;
+  --panel: #ffffff;
+  --rule: #d3dce1;
+  --text: #0f181d;
+  --muted: #5a6b75;
+  --signal: #0e7872;
+  --pass: #157c54;
+  --warn: #975f06;
+  --fail: #b8373d;
+}
+
+:root {
+  /* Type */
+  --ff-ui: "Archivo Variable", "Archivo", system-ui, sans-serif;
+  --ff-num: "Martian Mono", ui-monospace, monospace;
+  --width-dense: 87%;
+  --width-normal: 100%;
+
+  /* Shape */
+  --radius: 2px;
+  --rail-width: 232px;
+  --main-max: 1440px;
+
+  /* The one allowed shadow, for popovers only. */
+  --popover-shadow: 0 8px 24px -8px rgb(0 0 0 / 0.45);
+
+  /*
+   * shadcn/ui expects these names. They map onto the tokens above and are
+   * never given colours of their own. (shadcn's background "--muted" collides
+   * with our text token, so components use --rule for that surface instead.)
+   */
+  --background: var(--bg);
+  --foreground: var(--text);
+  --card: var(--panel);
+  --card-foreground: var(--text);
+  --popover: var(--panel);
+  --popover-foreground: var(--text);
+  --primary: var(--signal);
+  --primary-foreground: var(--bg);
+  --secondary: var(--rule);
+  --secondary-foreground: var(--text);
+  --muted-foreground: var(--muted);
+  --accent: var(--rule);
+  --accent-foreground: var(--text);
+  --destructive: var(--fail);
+  --border: var(--rule);
+  --input: var(--rule);
+  --ring: var(--signal);
+}

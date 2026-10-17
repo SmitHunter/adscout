@@ -1,0 +1,277 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "@fontsource-variable/archivo/wdth.css";
+@import "@fontsource/martian-mono/400.css";
+@import "@fontsource/martian-mono/500.css";
+@import "./tokens.css";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* Only the token palette, type scale and radius exist as utilities. */
+@theme inline {
+  --color-*: initial;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+  --color-bg: var(--bg);
+  --color-panel: var(--panel);
+  --color-rule: var(--rule);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-signal: var(--signal);
+  --color-pass: var(--pass);
+  --color-warn: var(--warn);
+  --color-fail: var(--fail);
+
+  /* shadcn/ui aliases */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --font-*: initial;
+  --font-sans: var(--ff-ui);
+  --font-ui: var(--ff-ui);
+  --font-num: var(--ff-num);
+  --font-mono: var(--ff-num);
+
+  --text-*: initial;
+  --text-12: 12px;
+  --text-12--line-height: 16px;
+  --text-13: 13px;
+  --text-13--line-height: 18px;
+  --text-15: 15px;
+  --text-15--line-height: 22px;
+  --text-18: 18px;
+  --text-18--line-height: 24px;
+  --text-24: 24px;
+  --text-24--line-height: 30px;
+  --text-40: 40px;
+  --text-40--line-height: 44px;
+  --text-72: 72px;
+  --text-72--line-height: 72px;
+
+  --radius-*: initial;
+  --radius-xs: var(--radius);
+  --radius-sm: var(--radius);
+  --radius-md: var(--radius);
+  --radius-lg: var(--radius);
+  --radius-xl: var(--radius);
+  --radius-full: 9999px;
+
+  --shadow-*: initial;
+  --shadow-popover: var(--popover-shadow);
+}
+
+@utility font-dense {
+  font-stretch: var(--width-dense);
+}
+
+@utility font-normal-width {
+  font-stretch: var(--width-normal);
+}
+
+@layer base {
+  *,
+  ::before,
+  ::after {
+    border-color: var(--rule);
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--ff-ui);
+    font-size: 13px;
+    line-height: 18px;
+    font-stretch: var(--width-normal);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: var(--signal);
+    color: var(--bg);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--signal);
+    outline-offset: 2px;
+  }
+
+  /* Numerals: scores, counts, dates, IDs. */
+  .num {
+    font-family: var(--ff-num);
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+    letter-spacing: -0.02em;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* The live search's indeterminate bar: a segment scanning along a 2px track. */
+@keyframes progress-scan {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(300%);
+  }
+}
+
+/*
+ * The report's one orchestrated moment: ruler markers slide from 0 to their
+ * values (the score counts up in JS over the same beat). Later value changes,
+ * such as the Market / leader toggle, glide via the transition.
+ */
+@keyframes ruler-slide {
+  from {
+    left: 6px;
+  }
+}
+
+@layer components {
+  .ruler-marker {
+    animation: ruler-slide 400ms cubic-bezier(0.2, 0, 0, 1) both;
+    transition: left 300ms cubic-bezier(0.2, 0, 0, 1);
+  }
+
+  /* A factor still waiting on its data. */
+  .ruler-hatch {
+    background: repeating-linear-gradient(135deg, var(--rule) 0 2px, transparent 2px 5px);
+    outline: 1px solid var(--rule);
+    outline-offset: -1px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ruler-marker {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+
+  .progress-scan {
+    animation: progress-scan 1.6s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+  }
+
+  /* Reduced motion: a still bar (the element also gets motion-reduce:w-full). */
+  @media (prefers-reduced-motion: reduce) {
+    .progress-scan {
+      transform: none;
+      animation: none !important;
+    }
+  }
+}
+
+/*
+ * The print page (/report/:id/print): one A4 sheet. The PDF export prints it
+ * at 10 mm margins; on screen (the PNG export, 1600 px wide) the same sheet is
+ * zoomed up so its 190 mm of content lays out identically, only larger.
+ */
+@page {
+  size: A4;
+  margin: 10mm;
+}
+
+@layer components {
+  .print-root {
+    min-height: 100%;
+    padding: 32px 24px;
+    background: var(--bg);
+    color: var(--text);
+  }
+
+  .print-sheet {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 210mm;
+    min-height: 297mm;
+    margin-inline: auto;
+    padding: 10mm;
+    border: 1px solid var(--rule);
+    background: var(--panel);
+  }
+
+  @media screen and (min-width: 1500px) {
+    .print-sheet {
+      zoom: 1.9;
+    }
+  }
+
+  @media print {
+    .print-root {
+      min-height: 0;
+      padding: 0;
+      background: none;
+    }
+
+    .print-sheet {
+      width: auto;
+      /*
+       * A hair under the 277 mm page box, so rounding never spills a second
+       * page; --print-fit shrinks an over-long sheet to fit (see pageFit).
+       */
+      min-height: calc(276mm / var(--print-fit, 1));
+      padding: 0;
+      border: 0;
+      zoom: var(--print-fit, 1);
+    }
+  }
+
+  /* Factor rulers on paper: tighter rows, one line of detail each. */
+  .print-factors > li {
+    padding-block: 7px;
+  }
+
+  .print-factors > li > p:not(.sr-only) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* No motion on the print page: it is captured, not watched. */
+  [data-still] *,
+  [data-still] ::before,
+  [data-still] ::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media print {
+  html.print-route,
+  html.print-route body {
+    background: var(--panel);
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "data": [
+    {
+      "id": "1001",
+      "page_id": "501",
+      "page_name": "Alpha Store",
+      "ad_delivery_start_time": "2026-03-02",
+      "ad_creative_bodies": ["Fix your posture today", "second body"],
+      "ad_creative_link_titles": ["Posture Corrector"],
+      "ad_creative_link_captions": ["alpha.example"],
+      "ad_snapshot_url": "https://www.facebook.com/ads/archive/render_ad/?id=1001&access_token=SECRETTOKEN",
+      "publisher_platforms": ["facebook", "instagram"],
+      "eu_total_reach": 12000,
+      "languages": ["en"]
+    },
+    {
+      "id": "1002",
+      "page_id": "502",
+      "page_name": "Beta Shop",
+      "ad_delivery_start_time": "2026-02-10T08:30:00+0000",
+      "ad_delivery_stop_time": "2026-02-20",
+      "publisher_platforms": ["facebook"]
+    }
+  ],
+  "paging": {
+    "cursors": {"before": "b1", "after": "a1"},
+    "next": "https://graph.facebook.com/v23.0/ads_archive?after=a1&access_token=SECRETTOKEN"
+  }
+}

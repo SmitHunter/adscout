@@ -1,0 +1,191 @@
+{
+  "keyword": "posture corrector",
+  "country": "US",
+  "search_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=posture+corrector&search_type=keyword_unordered&media_type=all",
+  "final_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&is_targeted_country=false&media_type=all&q=posture%20corrector&search_type=keyword_unordered&sort_data[mode]=total_impressions&sort_data[direction]=desc",
+  "recorded_at": "2026-10-17T03:36:57.954088+00:00",
+  "scrolls_requested": 3,
+  "scrolls_done": 3,
+  "blocked": null,
+  "html_ad_archive_id_mentions": 30,
+  "graphql_files": [
+    {
+      "file": "graphql_1.json",
+      "url": "https://www.facebook.com/api/graphql/",
+      "status": 200,
+      "request": {
+        "fb_api_req_friendly_name": "AdLibrarySearchPaginationQuery",
+        "doc_id": "24922295957467452",
+        "variables": {
+          "activeStatus": "active",
+          "adType": "ALL",
+          "bylines": [],
+          "collationToken": null,
+          "contentLanguages": [],
+          "countries": [
+            "US"
+          ],
+          "cursor": "AQHTl_JPrBuxMW7BhuhALbpAz-HFeOXLNIX06MMpGpDw08Alf97tFAutPGgLRE3D8_rg",
+          "excludedIDs": null,
+          "first": 10,
+          "isTargetedCountry": false,
+          "location": null,
+          "mediaType": "all",
+          "multiCountryFilterMode": null,
+          "pageIDs": [],
+          "potentialReachInput": null,
+          "publisherPlatforms": [],
+          "queryString": "posture corrector",
+          "regions": null,
+          "searchType": "keyword_unordered",
+          "sessionID": "REDACTED",
+          "sortData": null,
+          "source": null,
+          "startDate": null,
+          "v": "5245b2",
+          "viewAllPageID": "0"
+        }
+      },
+      "bytes": 76638,
+      "ad_archive_id_mentions": 10
+    },
+    {
+      "file": "graphql_2.json",
+      "url": "https://www.facebook.com/api/graphql/",
+      "status": 200,
+      "request": {
+        "fb_api_req_friendly_name": "AdLibrarySearchPaginationQuery",
+        "doc_id": "24922295957467452",
+        "variables": {
+          "activeStatus": "active",
+          "adType": "ALL",
+          "bylines": [],
+          "collationToken": null,
+          "contentLanguages": [],
+          "countries": [
+            "US"
+          ],
+          "cursor": "AQHTtoRZY46rFub35Akpa64BRE68zcYwFU1ZBAPT0l6U5tUqpvaiGed75NRItpMkSHCj",
+          "excludedIDs": null,
+          "first": 10,
+          "isTargetedCountry": false,
+          "location": null,
+          "mediaType": "all",
+          "multiCountryFilterMode": null,
+          "pageIDs": [],
+          "potentialReachInput": null,
+          "publisherPlatforms": [],
+          "queryString": "posture corrector",
+          "regions": null,
+          "searchType": "keyword_unordered",
+          "sessionID": "REDACTED",
+          "sortData": null,
+          "source": null,
+          "startDate": null,
+          "v": "5245b2",
+          "viewAllPageID": "0"
+        }
+      },
+      "bytes": 54696,
+      "ad_archive_id_mentions": 10
+    },
+    {
+      "file": "graphql_3.json",
+      "url": "https://www.facebook.com/api/graphql/",
+      "status": 200,
+      "request": {
+        "fb_api_req_friendly_name": "AdLibrarySearchPaginationQuery",
+        "doc_id": "24922295957467452",
+        "variables": {
+          "activeStatus": "active",
+          "adType": "ALL",
+          "bylines": [],
+          "collationToken": null,
+          "contentLanguages": [],
+          "countries": [
+            "US"
+          ],
+          "cursor": "AQHTiYELh4lrfXx93k2KGFHPJ34XRzcl-cDSuILdwm4CTiWquuuscUkMIcvW6Fmw4twv",
+          "excludedIDs": null,
+          "first": 10,
+          "isTargetedCountry": false,
+          "location": null,
+          "mediaType": "all",
+          "multiCountryFilterMode": null,
+          "pageIDs": [],
+          "potentialReachInput": null,
+          "publisherPlatforms": [],
+          "queryString": "posture corrector",
+          "regions": null,
+          "searchType": "keyword_unordered",
+          "sessionID": "REDACTED",
+          "sortData": null,
+          "source": null,
+          "startDate": null,
+          "v": "5245b2",
+          "viewAllPageID": "0"
+        }
+      },
+      "bytes": 55193,
+      "ad_archive_id_mentions": 9
+    },
+    {
+      "file": "graphql_4.json",
+      "url": "https://www.facebook.com/api/graphql/",
+      "status": 200,
+      "request": {
+        "fb_api_req_friendly_name": "AdLibrarySearchPaginationQuery",
+        "doc_id": "24922295957467452",
+        "variables": {
+          "activeStatus": "active",
+          "adType": "ALL",
+          "bylines": [],
+          "collationToken": null,
+          "contentLanguages": [],
+          "countries": [
+            "US"
+          ],
+          "cursor": "AQHTgDMdRNWr4AjjqYfZN8v1jq8egoFbURkx9Um74k08D5qPQ_joeA7hmiLOQOvY5YDf",
+          "excludedIDs": null,
+          "first": 10,
+          "isTargetedCountry": false,
+          "location": null,
+          "mediaType": "all",
+          "multiCountryFilterMode": null,
+          "pageIDs": [],
+          "potentialReachInput": null,
+          "publisherPlatforms": [],
+          "queryString": "posture corrector",
+          "regions": null,
+          "searchType": "keyword_unordered",
+          "sessionID": "REDACTED",
+          "sortData": null,
+          "source": null,
+          "startDate": null,
+          "v": "5245b2",
+          "viewAllPageID": "0"
+        }
+      },
+      "bytes": 77007,
+      "ad_archive_id_mentions": 10
+    }
+  ],
+  "response_urls": [
+    "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=posture+corrector&search_type=keyword_unordered&media_type=all",
+    "https://www.facebook.com/__rd_verify_REDACTED",
+    "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=posture+corrector&search_type=keyword_unordered&media_type=all",
+    "https://www.facebook.com/ajax/bz",
+    "https://www.facebook.com/ajax/bz",
+    "https://www.facebook.com/ajax/bz",
+    "https://www.facebook.com/api/graphql/",
+    "https://www.facebook.com/ajax/bz",
+    "https://www.facebook.com/ajax/bz",
+    "https://www.facebook.com/ajax/bz",
+    "https://www.facebook.com/api/graphql/",
+    "https://www.facebook.com/ajax/bz",
+    "https://www.facebook.com/ajax/bootloader-endpoint/",
+    "https://www.facebook.com/api/graphql/",
+    "https://www.facebook.com/api/graphql/",
+    "https://www.facebook.com/api/graphql/"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "data": [
+    {
+      "id": "1003",
+      "page_id": "503",
+      "page_name": "Gamma Co",
+      "ad_delivery_start_time": "2026-03-05",
+      "ad_creative_bodies": ["Gamma body"],
+      "publisher_platforms": ["instagram"]
+    }
+  ],
+  "paging": {"cursors": {"before": "b2", "after": "a2"}}
+}

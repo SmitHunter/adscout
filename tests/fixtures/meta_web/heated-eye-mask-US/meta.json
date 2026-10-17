@@ -1,0 +1,267 @@
+{
+  "keyword": "heated eye mask",
+  "country": "US",
+  "search_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=heated+eye+mask&search_type=keyword_unordered&media_type=all",
+  "final_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&is_targeted_country=false&media_type=all&q=heated%20eye%20mask&search_type=keyword_unordered&sort_data[mode]=total_impressions&sort_data[direction]=desc",
+  "recorded_at": "2026-10-17T03:37:33.055774+00:00",
+  "scrolls_requested": 3,
+  "scrolls_done": 3,
+  "blocked": null,
+  "html_ad_archive_id_mentions": 30,
+  "graphql_files": [
+    {
+      "file": "graphql_1.json",
+      "url": "https://www.facebook.com/api/graphql/",
+      "status": 200,
+      "request": {
+        "fb_api_req_friendly_name": "AdLibrarySearchPaginationQuery",
+        "doc_id": "24922295957467452",
+        "variables": {
+          "activeStatus": "active",
+          "adType": "ALL",
+          "bylines": [],
+          "collationToken": null,
+          "contentLanguages": [],
+          "countries": [
+            "US"
+          ],
+          "cursor": "AQHT0iSZdM6q9mmpVyyz3nrXIycJluWrHrsxFvfuWeSbVBrEc7TqxfN8mvgHH-G2VeP9",
+          "excludedIDs": null,
+          "first": 10,
+          "isTargetedCountry": false,
+          "location": null,
+          "mediaType": "all",
+          "multiCountryFilterMode": null,
+          "pageIDs": [],
+          "potentialReachInput": null,
+          "publisherPlatforms": [],
+          "queryString": "heated eye mask",
+          "regions": null,
+          "searchType": "keyword_unordered",
+          "sessionID": "REDACTED",
+          "sortData": null,
+          "source": null,
+          "startDate": null,
+          "v": "1e165a",
+          "viewAllPageID": "0"
+        }
+      },
+      "bytes": 111169,
+      "ad_archive_id_mentions": 10
+    },
+    {
+      "file": "graphql_2.json",
+      "url": "https://www.facebook.com/api/graphql/",
+      "status": 200,
+      "request": {
+        "fb_api_req_friendly_name": "AdLibrarySearchPaginationQuery",
+        "doc_id": "24922295957467452",
+        "variables": {
+          "activeStatus": "active",
+          "adType": "ALL",
+          "bylines": [],
+          "collationToken": null,
+          "contentLanguages": [],
+          "countries": [
+            "US"
+          ],
+          "cursor": "AQHTJNezk0bJvNpnXnqK7zdZ72lMso6gpARCfrDEylcDzeZrVHTVP4X-TtBE0IbRXJQ-",
+          "excludedIDs": null,
+          "first": 10,
+          "isTargetedCountry": false,
+          "location": null,
+          "mediaType": "all",
+          "multiCountryFilterMode": null,
+          "pageIDs": [],
+          "potentialReachInput": null,
+          "publisherPlatforms": [],
+          "queryString": "heated eye mask",
+          "regions": null,
+          "searchType": "keyword_unordered",
+          "sessionID": "REDACTED",
+          "sortData": null,
+          "source": null,
+          "startDate": null,
+          "v": "1e165a",
+          "viewAllPageID": "0"
+        }
+      },
+      "bytes": 123365,
+      "ad_archive_id_mentions": 10
+    },
+    {
+      "file": "graphql_3.json",
+      "url": "https://www.facebook.com/api/graphql/",
+      "status": 200,
+      "request": {
+        "fb_api_req_friendly_name": "AdLibrarySearchPaginationQuery",
+        "doc_id": "24922295957467452",
+        "variables": {
+          "activeStatus": "active",
+          "adType": "ALL",
+          "bylines": [],
+          "collationToken": null,
+          "contentLanguages": [],
+          "countries": [
+            "US"
+          ],
+          "cursor": "AQHTIbYOgL51MK376aX_Wn7xsnGE3RjCAyBOIbVF5bIubHr7mw9nHJ3VSOZSnIo_Ys7J",
+          "excludedIDs": null,
+          "first": 10,
+          "isTargetedCountry": false,
+          "location": null,
+          "mediaType": "all",
+          "multiCountryFilterMode": null,
+          "pageIDs": [],
+          "potentialReachInput": null,
+          "publisherPlatforms": [],
+          "queryString": "heated eye mask",
+          "regions": null,
+          "searchType": "keyword_unordered",
+          "sessionID": "REDACTED",
+          "sortData": null,
+          "source": null,
+          "startDate": null,
+          "v": "1e165a",
+          "viewAllPageID": "0"
+        }
+      },
+      "bytes": 157356,
+      "ad_archive_id_mentions": 10
+    },
+    {
+      "file": "graphql_4.json",
+      "url": "https://www.facebook.com/api/graphql/",
+      "status": 200,
+      "request": {
+        "fb_api_req_friendly_name": "AdLibrarySearchPaginationQuery",
+        "doc_id": "24922295957467452",
+        "variables": {
+          "activeStatus": "active",
+          "adType": "ALL",
+          "bylines": [],
+          "collationToken": null,
+          "contentLanguages": [],
+          "countries": [
+            "US"
+          ],
+          "cursor": "AQHThQ6DHyvi67gDJD_IKFG0Jt1Fhg_E0o871Lr6RYly__vj7_5ez-zAhGYYsClVZ8vR",
+          "excludedIDs": null,
+          "first": 10,
+          "isTargetedCountry": false,
+          "location": null,
+          "mediaType": "all",
+          "multiCountryFilterMode": null,
+          "pageIDs": [],
+          "potentialReachInput": null,
+          "publisherPlatforms": [],
+          "queryString": "heated eye mask",
+          "regions": null,
+          "searchType": "keyword_unordered",
+          "sessionID": "REDACTED",
+          "sortData": null,
+          "source": null,
+          "startDate": null,
+          "v": "1e165a",
+          "viewAllPageID": "0"
+        }
+      },
+      "bytes": 75430,
+      "ad_archive_id_mentions": 10
+    },
+    {
+      "file": "graphql_5.json",
+      "url": "https://www.facebook.com/api/graphql/",
+      "status": 200,
+      "request": {
+        "fb_api_req_friendly_name": "AdLibrarySearchPaginationQuery",
+        "doc_id": "24922295957467452",
+        "variables": {
+          "activeStatus": "active",
+          "adType": "ALL",
+          "bylines": [],
+          "collationToken": null,
+          "contentLanguages": [],
+          "countries": [
+            "US"
+          ],
+          "cursor": "AQHTM6DYj08JbTvDCILgY1Z3mhC-9TqKG1z8xga-7QLMZcP7Km34RLeekzRkRaTBPV8a",
+          "excludedIDs": null,
+          "first": 10,
+          "isTargetedCountry": false,
+          "location": null,
+          "mediaType": "all",
+          "multiCountryFilterMode": null,
+          "pageIDs": [],
+          "potentialReachInput": null,
+          "publisherPlatforms": [],
+          "queryString": "heated eye mask",
+          "regions": null,
+          "searchType": "keyword_unordered",
+          "sessionID": "REDACTED",
+          "sortData": null,
+          "source": null,
+          "startDate": null,
+          "v": "1e165a",
+          "viewAllPageID": "0"
+        }
+      },
+      "bytes": 113688,
+      "ad_archive_id_mentions": 10
+    },
+    {
+      "file": "graphql_6.json",
+      "url": "https://www.facebook.com/api/graphql/",
+      "status": 200,
+      "request": {
+        "fb_api_req_friendly_name": "AdLibrarySearchPaginationQuery",
+        "doc_id": "24922295957467452",
+        "variables": {
+          "activeStatus": "active",
+          "adType": "ALL",
+          "bylines": [],
+          "collationToken": null,
+          "contentLanguages": [],
+          "countries": [
+            "US"
+          ],
+          "cursor": "AQHTRP6OK3r6FYgzNZdIWxHljZ5Wny8mFU-aGbPPk-opJXbviPkTTd0QyCSdSh_pdlZl",
+          "excludedIDs": null,
+          "first": 10,
+          "isTargetedCountry": false,
+          "location": null,
+          "mediaType": "all",
+          "multiCountryFilterMode": null,
+          "pageIDs": [],
+          "potentialReachInput": null,
+          "publisherPlatforms": [],
+          "queryString": "heated eye mask",
+          "regions": null,
+          "searchType": "keyword_unordered",
+          "sessionID": "REDACTED",
+          "sortData": null,
+          "source": null,
+          "startDate": null,
+          "v": "1e165a",
+          "viewAllPageID": "0"
+        }
+      },
+      "bytes": 192823,
+      "ad_archive_id_mentions": 10
+    }
+  ],
+  "response_urls": [
+    "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=heated+eye+mask&search_type=keyword_unordered&media_type=all",
+    "https://www.facebook.com/ajax/bz",
+    "https://www.facebook.com/api/graphql/",
+    "https://www.facebook.com/ajax/bz",
+    "https://www.facebook.com/ajax/bz",
+    "https://www.facebook.com/ajax/bootloader-endpoint/",
+    "https://www.facebook.com/api/graphql/",
+    "https://www.facebook.com/api/graphql/",
+    "https://www.facebook.com/api/graphql/",
+    "https://www.facebook.com/api/graphql/",
+    "https://www.facebook.com/api/graphql/",
+    "https://www.facebook.com/api/graphql/"
+  ]
+}
