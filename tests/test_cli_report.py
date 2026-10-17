@@ -1,4 +1,5 @@
 import json
+import re
 from datetime import UTC, datetime
 from pathlib import Path
 
@@ -56,9 +57,13 @@ def _seed(engine: Engine, ads: list[Ad] = ADS, status: str = "ok") -> int:
         return snap.id
 
 
+_ANSI = re.compile(r"\[[0-9;]*m")
+
+
 def _invoke(*args: str) -> tuple[int, str]:
-    result = CliRunner().invoke(app, list(args), env={"COLUMNS": "120"})
-    return result.exit_code, result.output
+    # CI terminals (GITHUB_ACTIONS) make Rich colour its error panels, which splits option names.
+    result = CliRunner().invoke(app, list(args), env={"COLUMNS": "200"})
+    return result.exit_code, _ANSI.sub("", result.output)
 
 
 def _json(snapshot_id: int) -> WinnerScore:
